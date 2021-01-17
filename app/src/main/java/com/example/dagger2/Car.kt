@@ -5,11 +5,13 @@ import javax.inject.Inject
 
 class Car @Inject constructor(private var engine: Engine, private var wheels: Wheels) {
 
-    fun drive(){
+
+    fun drive() {
         Log.d(TAG, "Driving...")
     }
 
-    companion object{
+
+    companion object {
         private const val TAG = "MyCar"
     }
 }

@@ -1,6 +1,3 @@
 package com.example.dagger2
 
-import javax.inject.Inject
-
-class Wheels @Inject constructor() {
-}
+class Wheels constructor(private var rims: Rims, private var tires: Tires)
