@@ -2,12 +2,14 @@ package com.example.dagger2.Dagger
 
 import com.example.dagger2.Car.DieselEngine
 import com.example.dagger2.Car.Engine
-import dagger.Binds
 import dagger.Module
+import dagger.Provides
 
 @Module
-abstract class DieselEngineModule {
+class DieselEngineModule constructor(val horsePower: Int) {
 
-    @Binds
-    abstract fun bindDEngine(dieselEngine: DieselEngine): Engine
+    @Provides
+    fun provideDEngine(): Engine {
+        return DieselEngine(horsePower)
+    }
 }
