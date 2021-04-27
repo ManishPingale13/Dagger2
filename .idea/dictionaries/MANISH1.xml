@@ -2,6 +2,7 @@
   <dictionary name="MANISH1">
     <words>
       <w>boltons</w>
+      <w>singletone</w>
     </words>
   </dictionary>
 </component>
